@@ -35,12 +35,12 @@ public class UserTest {
         assertFalse(weakUser.isPasswordStrong());
     }
 
-  //  @Test
-  //  public void testValidatePassword() {
-  //      User validUser = new User("Kalle", "password123");
-  //      assertTrue(validUser.validatePassword());
+    @Test
+    public void testValidatePassword() {
+        User validUser = new User("Kalle", "password123");
+        assertTrue(validUser.validatePassword());
 
-  //      User invalidUser = new User("Kalle", "short");
-  //      assertFalse(invalidUser.validatePassword());
-  //  }
+        User invalidUser = new User("Kalle", "short");
+        assertFalse(invalidUser.validatePassword());
+    }
 }
