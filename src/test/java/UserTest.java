@@ -8,7 +8,7 @@ public class UserTest {
     @Test
     public void testUserConstructor() {
         User user = new User("Kalle", "password123");
-        assertEquals("Calle", user.getUserName());
+        assertEquals("Kalle", user.getUserName());
         assertEquals("password123", user.getPassword());
     }
 
